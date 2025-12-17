@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dummies Traffic School</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- HOME2 HERO SECTION STYLES --- */
+
+  </style>
+</head>
+<body>
+<!-- HEADER/NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <!-- Logo and menu here (same as before) -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="logo-text">
+        <span class="logo-main">Demo</span><br>
+        <span class="logo-sub">TRAFFIC SCHOOL.COM</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+         <li class="nav-item"><a class="nav-link" href="home.html">COURSE</a></li>
+         
+           <li class="nav-item dropdown">
+    <!-- PARENT LINK: Ispe data-bs-toggle HONA chahiye -->
+    <a class="nav-link dropdown-toggle" href="TicketViolations1.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        TICKETS & VIOLATION
+    </a>
+    
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <!-- CHILD LINKS: Inpe data-bs-toggle NAHI hona chahiye -->
+         <li><a class="dropdown-item" href="TicketViolations1.html">Ticket Violations 1</a></li>
+        <li><a class="dropdown-item" href="TicketViolations2.html">Ticket Violations 2</a></li>
+        <li><a class="dropdown-item" href="TicketViolations3.html">Ticket Violations 3</a></li>
+    </ul>
+</li>
+
+        <li class="nav-item"><a class="nav-link" href="internet.html">INTERNET</a></li>
+        <li class="nav-item"><a class="nav-link" href="booklet.html">BOOKLET</a></li>
+        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="privacy.html">PRIVACY</a></li>
+         <li class="nav-item"><a class="nav-link" href="Desktop.html">DESKTOP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION (replace image with two-column layout) -->
+<section class="home2-hero-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Left: Heading, subheading, dropdowns, button -->
+      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+        <div class="home2-hero-content">
+          <h1 class="home2-hero-title fw-bold mb-3">
+            Traffic School, Defensive Driving<br>& Drivers Ed
+          </h1>
+          <p class="home2-hero-subtitle mb-4">
+            Let's Find Your Driving Safety Course
+          </p>
+          <form>
+            <select class="form-select home2-courses-state-dropdown mb-3">
+  <option value="all" selected>Select Your State</option>
+  <option value="Texas">Texas</option>
+  <option value="Florida">Florida</option>
+  <option value="New York">New York</option>
+  <option value="California">California</option>
+  <option value="Michigan">Michigan</option>
+  <option value="Virginia">Virginia</option>
+</select>
+            <select class="form-select home2-hero-select mb-3">
+              <option selected>Select You Course</option>
+              <option>Traffic School</option>
+              <option>Defensive Driving</option>
+              <option>Drivers Ed</option>
+            </select>
+            <select class="form-select home2-hero-select mb-4">
+              <option selected>Select You Age</option>
+              <option>Under 18</option>
+              <option>18-55</option>
+              <option>Over 55</option>
+            </select>
+            <button type="submit"  id="find-course-btn" class="home2-hero-btn w-100">Find Your Course</button>
+          </form>
+        </div>
+      </div>
+      <!-- Right: Video with thumbnail -->
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
+        <div class="home2-hero-video-wrapper">
+          <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="home2-hero-video-link">
+            <img src="assets/images/Mask group (1).png" alt="Video" class="home2-hero-video-img">
+            <span class="home2-hero-play-btn">&#9658;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hbox-section py-4">
+  <div class="container">
+    <div class="row text-center justify-content-center align-items-start g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="hbox-item">
+          <img src="assets/images/location 7.png" alt="Best online defensive driving" class="hbox-icon mb-3">
+          <div class="hbox-title">Best online defensive driving</div>
+          <div class="hbox-desc">Rated 4+ stars by 95% of students</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="hbox-item">
+          <img src="assets/images/location 6.png" alt="Over 9 million students" class="hbox-icon mb-3">
+          <div class="hbox-title">Over 9 million students</div>
+          <div class="hbox-desc">have taken our courses</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="hbox-item">
+          <img src="assets/images/Untitled-1 12 (1).png" alt="The shortest courses" class="hbox-icon mb-3">
+          <div class="hbox-title">The shortest courses</div>
+          <div class="hbox-desc">allowed by state law</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="hbox-item">
+          <img src="assets/images/Untitled-1 14.png" alt="100% satisfaction guarantee" class="hbox-icon mb-3">
+          <div class="hbox-title">100% satisfaction guarantee</div>
+          <div class="hbox-desc">Not happy? Get a full refund</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="home2-courses-section py-5">
+  <div class="container">
+    <h2 class="home2-courses-title text-center fw-bold mb-4">Featured Products</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Texas</div>
+          <div class="home2-courses-card flex-fill" data-state="Texas">
+            <div class="home2-courses-card-title mb-1">School# – C3249<br>Online TX Adult Drivers Ed</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>TX Approved for Ages 18+</li>
+              <li>DPS exam included–skip the DPS line!</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$75.00 <b>$39.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Texas</div>
+          <div class="home2-courses-card flex-fill" data-state="Texas">
+            <div class="home2-courses-card-title mb-1">CP022, School #C3249<br>TX Defensive Driving</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>Approved for all TX Traffic Courts</li>
+              <li>Lowest Price Allowed by Law</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$29.00 <b>$44.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Florida</div>
+          <div class="home2-courses-card flex-fill" data-state="Florida">
+            <div class="home2-courses-card-title mb-1">FL State Authorized<br>Driver Education Traffic Safety Course (DETS)</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>Now required for teens under 18</li>
+              <li>Satisfies FL First Time Driver prereq</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$24.00 <b>$34.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">New York</div>
+          <div class="home2-courses-card flex-fill" data-state="New York">
+            <div class="home2-courses-card-title mb-1">NY DMV Approved<br>Defensive Driving Course</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>Guaranteed 10% insurance discount</li>
+              <li>Up to a 4 point reduction</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$29.00 <b>$59.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Texas</div>
+          <div class="home2-courses-card flex-fill" data-state="Texas">
+            <div class="home2-courses-card-title mb-1">TX TDLR Approved<br>Parent-Taught Drivers Ed</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>The #1 All-in-one package</li>
+              <li>One-on-one parent–teen guidance</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$69.00 <b>$115.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">California</div>
+          <div class="home2-courses-card flex-fill" data-state="California">
+            <div class="home2-courses-card-title mb-1">School #E0138,Course #0L613<br>CA Online Traffic School</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>Hide Points on Your Record</li>
+              <li>Electronic reporting to the DMV</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$39.00 <b>$39.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Florida</div>
+          <div class="home2-courses-card flex-fill" data-state="Florida">
+            <div class="home2-courses-card-title mb-1">FL State Authorized<br>Drug and Alcohol 4-Hour TLSAE Course</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>For adults 18+</li>
+              <li>Automatic completion reporting</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$75.00 <b>$39.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Michigan</div>
+          <div class="home2-courses-card flex-fill" data-state="Michigan">
+            <div class="home2-courses-card-title mb-1">Michigan SOS Approved<br>Michigan Online Basic Driver Improvement</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>Easy to complete – finish in just one day</li>
+              <li>Great way to keep your insurance</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$75.00 <b>$39.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="home2-courses-card-wrapper w-100 position-relative">
+          <div class="home2-courses-state-float">Virginia</div>
+          <div class="home2-courses-card flex-fill" data-state="Virginia">
+            <div class="home2-courses-card-title mb-1">Virginia DMV Approved<br>Virginia Online Driver Improvement Course</div>
+            <ul class="home2-courses-card-desc mb-2">
+              <li>100% online instruction – save time and money</li>
+              <li>Keep your car insurance bills from up</li>
+            </ul>
+            <div class="home2-courses-price mb-2">$75.00 <b>$39.00</b></div>
+            <button class="home2-courses-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="twocards-section py-5">
+  <div class="container">
+    <h2 class="twocards-title text-center fw-bold mb-5">Our Driving Safety Courses</h2>
+    <div class="row g-5 align-items-center mb-4">
+      <div class="col-12 col-md-6">
+        <div class="twocards-text">
+          <h5 class="twocards-heading">Online Courses You Can Enjoy</h5>
+          <p>
+            No matter how busy you are, you can count on I Drive Safely to give you complete freedom in studying for your online driving course.<br>
+            Our safe driver courses and online driving classes are fully online, so there’s no need for textbooks or classrooms to complete driving safety course.<br>
+            <b>Study whenever, wherever, and however you want</b> with 24/7 access to our driving course online.<br>
+            Our safety driving school consists of easy-to-understand chapters make classes easy – and learning even easier.<br>
+            Interactive graphics and defensive driving course material make for a fun driver safety experience.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <img src="assets/images/Rectangle 73.png" alt="Online Course" class="twocards-img img-fluid rounded">
+      </div>
+    </div>
+    <div class="row g-5 align-items-center flex-md-row-reverse">
+      <div class="col-12 col-md-6">
+        <div class="twocards-text">
+          <h5 class="twocards-heading">Driving School You Can Count On</h5>
+          <p>
+            With approvals in nearly every state in the U.S., I Drive Safely lets you drive safe with a driving school that brings you the most advanced, convenient driver safety courses and defensive driving courses available online.<br>
+            Our defensive driving school has more than 15 years of expertise for an unrivaled quality driver safety experience.<br>
+            At our traffic school, I Drive Safely online course is developed by learning theory experts and professional driving instructors.<br>
+            Our safe driving course is a combination of text lessons, animated videos, and audio clips – all from the comfort of your home.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <img src="assets/images/Rectangle 74.png" alt="Driving School" class="twocards-img img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="devicepay-section py-5">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <!-- Left: Text -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="devicepay-text">
+          <h3 class="devicepay-title fw-bold mb-3">
+            Online Traffic School Course On<br>
+            Any Device, Any Time
+          </h3>
+          <p class="devicepay-desc mb-0">
+            Take our online driving school courses on the go, with 100% freedom at any time on any device, mobile, tablet or desktop
+          </p>
+        </div>
+      </div>
+      <!-- Right: Image -->
+      <div class="col-12 col-md-6 text-center">
+        <img src="assets/images/image 28.png" alt="Devices" class="devicepay-img img-fluid">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <!-- Left: Payment logos -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+        <div class="devicepay-logos d-flex align-items-center gap-3 mb-3 mb-md-0">
+          <img src="assets/images/image 4 booklet.png" alt="Visa" class="devicepay-logo">
+        </div>
+      </div>
+      <!-- Right: We Accept text -->
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-md-end">
+        <div class="devicepay-accept-text">
+          <span class="devicepay-accept-title fw-bold">We Accept</span>
+          <span class="devicepay-accept-desc ms-2">We accept Visa, MasterCard, American Express, and Discover.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+    
+    </div>
+  </div>
+  <div class="footer-middle">
+    <div class="container">
+      <div class="footer-links text-center">
+        HOME | INTERNET | BOOKLET | HELP/FAQ | CONTACT US | PRIVACY POLICY <br>
+        SIGN UP | LOGIN | TRAFFIC SCHOOL / DEFENSIVE DRIVING
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-copy text-center">
+        © 2025 Dummies Traffic School.com, All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.home2-courses-state-dropdown');
+  const findBtn = document.getElementById('find-course-btn');
+  function filterCourses() {
+    const selected = dropdown.value;
+    document.querySelectorAll('.home2-courses-card').forEach(card => {
+      const col = card.closest('.col-12');
+      if (selected === 'all' || card.getAttribute('data-state') === selected) {
+        if (col) col.style.display = '';
+        card.classList.remove('fade-in');
+        void card.offsetWidth;
+        card.classList.add('fade-in');
+      } else {
+        if (col) col.style.display = 'none';
+      }
+    });
+  }
+  dropdown.addEventListener('change', filterCourses);
+  if (findBtn) {
+    findBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      filterCourses();
+      document.querySelector('.home2-courses-section').scrollIntoView({behavior: 'smooth'});
+    });
+  }
+});
+</script>
+  <script src="Script.js"></script>
+</body>
+</html>

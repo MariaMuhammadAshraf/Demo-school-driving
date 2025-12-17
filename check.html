@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Filter Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .home2-courses-card { background: #fff; border: 1.5px solid #bbb; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); padding: 1.5rem 1.2rem 1.2rem 1.2rem; min-height: 220px; }
+    .home2-courses-state { background: #556905; color: #fff; font-weight: 700; border-radius: 6px; padding: 0.2em 1em; margin-bottom: 0.7em; display: inline-block; }
+    .home2-courses-card-title { font-weight: 700; font-size: 1.15rem; color: #222; margin-bottom: 0.2rem; }
+    .home2-courses-card-desc { color: #222; font-size: 1rem; margin-bottom: 0.7rem; opacity: 0.9; }
+    .home2-courses-price { font-weight: 700; color: #222; margin-bottom: 0.7em; }
+    .home2-courses-btn { background: #556905; color: #fff; border: none; border-radius: 6px; padding: 10px 0; font-size: 1.05rem; font-weight: 600; width: 100%; }
+    .home2-courses-btn:hover { background: #6d7e1a; }
+  </style>
+</head>
+<body>
+<div class="container py-5">
+  <h2 class="text-center fw-bold mb-4">Featured Products</h2>
+  <div class="row mb-4">
+    <div class="col-12 col-md-6 mx-auto">
+      <select class="form-select home2-courses-state-dropdown mb-3">
+        <option value="all" selected>Select Your State</option>
+        <option value="Texas">Texas</option>
+        <option value="Florida">Florida</option>
+        <option value="New York">New York</option>
+        <option value="California">California</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Virginia">Virginia</option>
+      </select>
+    </div>
+  </div>
+  <div class="row g-4 justify-content-center" id="courses-row">
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="home2-courses-card flex-fill" data-state="Texas">
+        <div class="home2-courses-state">Texas</div>
+        <div class="home2-courses-card-title mb-1">School# – C3249<br>Online TX Adult Drivers Ed</div>
+        <ul class="home2-courses-card-desc mb-2">
+          <li>TX Approved for Ages 18+</li>
+          <li>DPS exam included–skip the DPS line!</li>
+        </ul>
+        <div class="home2-courses-price mb-2">$75.00 <b>$39.00</b></div>
+        <button class="home2-courses-btn">Learn More</button>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="home2-courses-card flex-fill" data-state="Florida">
+        <div class="home2-courses-state">Florida</div>
+        <div class="home2-courses-card-title mb-1">FL State Authorized<br>Driver Education Traffic Safety Course (DETS)</div>
+        <ul class="home2-courses-card-desc mb-2">
+          <li>Now required for teens under 18</li>
+          <li>Satisfies FL First Time Driver prereq</li>
+        </ul>
+        <div class="home2-courses-price mb-2">$24.00 <b>$34.00</b></div>
+        <button class="home2-courses-btn">Learn More</button>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="home2-courses-card flex-fill" data-state="New York">
+        <div class="home2-courses-state">New York</div>
+        <div class="home2-courses-card-title mb-1">NY DMV Approved<br>Defensive Driving Course</div>
+        <ul class="home2-courses-card-desc mb-2">
+          <li>Guaranteed 10% insurance discount</li>
+          <li>Up to a 4 point reduction</li>
+        </ul>
+        <div class="home2-courses-price mb-2">$29.00 <b>$59.00</b></div>
+        <button class="home2-courses-btn">Learn More</button>
+      </div>
+    </div>
+    <!-- Add more cards as needed, each with data-state="..." -->
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.home2-courses-state-dropdown');
+  dropdown.addEventListener('change', function() {
+    const selected = this.value;
+    document.querySelectorAll('.home2-courses-card').forEach(card => {
+      // Find the .col-12 parent (the column)
+      const col = card.closest('.col-12');
+      if (selected === 'all' || card.getAttribute('data-state') === selected) {
+        if (col) col.style.display = '';
+      } else {
+        if (col) col.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
